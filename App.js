@@ -1,12 +1,8 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
-  View,
 } from 'react-native';
 
 import RoleSelectionScreen from './src/screen/roleSelectionScreen';
@@ -14,15 +10,17 @@ import RoleSelectionScreen from './src/screen/roleSelectionScreen';
 const App = () => {
 
   return (
-    <SafeAreaView>
-      <StatusBar barStyle={'dark-content'} />
+    <SafeAreaView style={styles.mainView}>
+      <StatusBar /> 
       <RoleSelectionScreen />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  
+  mainView: {
+
+  }
 });
 
 export default App;

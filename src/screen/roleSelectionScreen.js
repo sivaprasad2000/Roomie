@@ -8,22 +8,18 @@ const RoleSelectionScreen = () => {
                 <Text style={styles.logo}> Roomie </Text>
             </View>
             <View style={styles.lower}>
-                <TouchableOpacity style={styles.butttonOpacity}>
-                    <Pressable style={styles.buttonUpper}>
-                        <Text style={styles.buttonTextNormal}>
-                            Rent out a place
-                        </Text>
-                    </Pressable>
+                <TouchableOpacity style={styles.buttonUpper}>
+                    <Text style={styles.buttonTextNormal}>
+                        Rent out a place
+                    </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.butttonOpacity}>
-                    <Pressable style={styles.buttonLower}>
-                        <Text style={styles.buttonTextNormal}>
-                            Find a
-                        </Text>
-                        <Text style={styles.buttonTextCursive}>
-                            Roomie
-                        </Text>
-                    </Pressable>
+                <TouchableOpacity style={styles.buttonLower}>
+                    <Text style={styles.buttonTextNormal}>
+                        Find a
+                    </Text>
+                    <Text style={styles.buttonTextCursive}>
+                        Roomie
+                    </Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -60,6 +56,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     buttonLower: {
+        marginTop: 20,
         flexDirection: 'row',
         backgroundColor: '#fff',
         width: '70%',
@@ -67,12 +64,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
-    },
-    butttonOpacity: {
-        marginTop: 20,
-        width: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
     },
     buttonTextNormal: {
         fontFamily: 'Righteous-Regular',
