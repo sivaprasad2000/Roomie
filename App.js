@@ -9,12 +9,14 @@ import {
   View,
 } from 'react-native';
 
+import RoleSelectionScreen from './src/screen/roleSelectionScreen';
+
 const App = () => {
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView>
       <StatusBar barStyle={'dark-content'} />
-      
+      <RoleSelectionScreen />
     </SafeAreaView>
   );
 };
