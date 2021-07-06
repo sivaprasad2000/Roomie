@@ -11,7 +11,8 @@ const rooms = [
         owner_name: 'Kuttappan',
         urls: [
             'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sitting-rooms-hilliard-locust-18-11-20-1578948041.jpg',
-            'https://cdn-japantimes.com/wp-content/uploads/2021/04/np_file_81246.jpeg'
+            'https://cdn-japantimes.com/wp-content/uploads/2021/04/np_file_81246.jpeg',
+            'http://www.kagadental.com/wp-content/uploads/2021/03/bent-tree-urbanology-designs-img_9e110d4a0fd12e81_4-8707-1-0702bc7.jpg'
         ]
     },
     {

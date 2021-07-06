@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     roomList: {
         backgroundColor: '#fff',
         paddingVertical: 10,
-        width: '90%',
+        width: Dimensions.get('window').width*0.9,
     }
 })
 

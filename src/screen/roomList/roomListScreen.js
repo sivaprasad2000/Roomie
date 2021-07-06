@@ -14,7 +14,7 @@ const RoomListScreen = () => {
 
     return (
         <View style={styles.root}>
-            <FlatList style={styles.roomList} data={rooms} renderItem={({ item }) => <RoomCard room={item} />} showsVerticalScrollIndicator={false} />
+            <FlatList contentContainerStyle={styles.roomListInnerContainer} style={styles.roomList} data={rooms} renderItem={({ item }) => <RoomCard room={item} />} showsVerticalScrollIndicator={false} />
         </View>
     )
 }

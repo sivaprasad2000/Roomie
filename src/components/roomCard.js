@@ -1,14 +1,30 @@
-import React from 'react'
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import React, { useState } from 'react'
+import { View, Text, StyleSheet, Image, TouchableOpacity, FlatList, Dimensions } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
+
+const cardWidth = Dimensions.get('window').width*0.9;
 
 const RoomCard = (props) => {
 
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const renderDots = ({nativeEvent}) => {
+        setCurrentImageIndex(Math.round(nativeEvent.contentOffset.x/cardWidth))
+    }
+
     const room = props.room;
+
+    const renderCarousel = ({ item }) => (
+        <Image style={styles.image} source={{ uri: item }} />
+    )
 
     return (
         <View style={styles.root}>
-            <Image style={styles.image} source={{ uri: room.urls[0] }} />
+            <View style={{ width: cardWidth, height: 170 }}>
+                <FlatList onScroll={renderDots} pagingEnabled horizontal data={room.urls} keyExtractor={(item, index) => index} renderItem={renderCarousel} />
+            </View>
+            <View style={styles.dotContainer}>
+                {room.urls.map((item, index) => <View key={index} style={[styles.dot, { backgroundColor: (currentImageIndex == index)?'gray':'white' }]} />)}
+            </View>
             <View style={styles.detailsContainer}>
                 <View style={styles.cardDetailsLeft}>
                     <Text style={styles.location}>
@@ -39,18 +55,33 @@ const RoomCard = (props) => {
 
 const styles = StyleSheet.create({
     root: {
-        width: '100%',
-        height: 300,
+        width: cardWidth,
+        height: 330,
         marginVertical: 10,
         borderWidth: 1,
         borderRadius: 10,
         borderColor: '#b1b1b1',
     },
     image: {
-        width: '100%',
+        width: cardWidth,
         height: 170,
         resizeMode: 'cover',
         borderRadius: 10,
+    },
+    dotContainer: {
+        flexDirection: 'row',
+        width: '100%',
+        height: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    dot: {
+        height: 10,
+        width: 10,
+        borderWidth: 1,
+        borderRadius: 5,
+        borderColor: 'gray',
+        marginHorizontal: 5,
     },
     detailsContainer: {
         width: '100%',
