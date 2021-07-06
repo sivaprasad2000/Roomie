@@ -9,6 +9,9 @@ import {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#FFFFFF',
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
     padding: 20,
   },
 
@@ -27,7 +30,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
-    paddingLeft:10,
+    paddingLeft: 10,
   },
 });
 
