@@ -1,30 +1,5 @@
-import React from 'react'
 import { View, Text, StyleSheet, Dimensions, Pressable, TouchableOpacity } from 'react-native'
 
-const RoleSelectionScreen = () => {
-    return (
-        <View style={styles.root}>
-            <View style={styles.upper}>
-                <Text style={styles.logo}> Roomie </Text>
-            </View>
-            <View style={styles.lower}>
-                <TouchableOpacity style={styles.buttonUpper}>
-                    <Text style={styles.buttonTextNormal}>
-                        Rent out a place
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonLower}>
-                    <Text style={styles.buttonTextNormal}>
-                        Find a
-                    </Text>
-                    <Text style={styles.buttonTextCursive}>
-                        Roomie
-                    </Text>
-                </TouchableOpacity>
-            </View>
-        </View>
-    )
-}
 
 const styles = StyleSheet.create({
     root: {
@@ -76,5 +51,4 @@ const styles = StyleSheet.create({
     }
 })
 
-
-export default RoleSelectionScreen
+export default styles

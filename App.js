@@ -5,7 +5,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import RoleSelectionScreen from './src/screen/roleSelectionScreen';
+import RoleSelectionScreen from './src/screen/RoleSelection/roleSelectionScreen';
 
 const App = () => {
 
