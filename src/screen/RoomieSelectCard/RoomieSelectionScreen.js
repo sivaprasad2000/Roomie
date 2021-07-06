@@ -12,7 +12,7 @@ const RoomieSelectionScreen = props => {
         />
       </View>
       <View>
-      <TouchableOpacity style={styles.buttonUpper}>
+        <TouchableOpacity style={styles.buttonUpper}>
           <Text style={styles.buttonTextNormal}>X</Text>
         </TouchableOpacity>
       </View>
