@@ -5,14 +5,16 @@ import {
   StyleSheet,
 } from 'react-native';
 
+
 import RoleSelectionScreen from './src/screen/RoleSelection/roleSelectionScreen';
+import RoomieSelectionScreen from './src/screen/RoomieSelectCard/RoomieSelectionScreen';
 
 const App = () => {
 
   return (
     <SafeAreaView style={styles.mainView}>
       <StatusBar /> 
-      <RoleSelectionScreen />
+      <RoomieSelectionScreen />
     </SafeAreaView>
   );
 };
