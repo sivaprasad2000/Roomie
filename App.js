@@ -6,13 +6,14 @@ import {
 } from 'react-native';
 
 import RoleSelectionScreen from './src/screen/RoleSelection/roleSelectionScreen';
+import RoomListScreen from './src/screen/roomList/roomListScreen';
 
 const App = () => {
 
   return (
     <SafeAreaView style={styles.mainView}>
       <StatusBar /> 
-      <RoleSelectionScreen />
+      <RoomListScreen />
     </SafeAreaView>
   );
 };
