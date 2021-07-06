@@ -1,14 +1,20 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, FlatList, ScrollView } from 'react-native'
 import styles from './styles'
 import Entypo from 'react-native-vector-icons/Entypo'
+import RoomCard from '../../components/roomCard'
+
+import rooms from '../../data/roomsForRent'
 
 const RoomListScreen = () => {
+
+    const roomListRender = ({ item }) => {
+        <RoomCard room={item} />
+    };
+
     return (
-        <View>
-            <Text>
-                kfjdslkjf <Entypo name={'cross'} size={25} color={'red'} />
-            </Text>
+        <View style={styles.root}>
+            <FlatList style={styles.roomList} data={rooms} renderItem={({ item }) => <RoomCard room={item} />} showsVerticalScrollIndicator={false} />
         </View>
     )
 }
