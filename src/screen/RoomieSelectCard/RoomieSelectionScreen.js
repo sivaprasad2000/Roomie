@@ -4,7 +4,7 @@ import styles from './styles';
 
 const RoomieSelectionScreen = props => {
   return (
-    <View styles={styles.container}>
+    <View style={styles.container}>
       <View style={styles.pictureContainer}>
         <Image
           style={styles.picture}
@@ -18,7 +18,7 @@ const RoomieSelectionScreen = props => {
           I have a lot of hobbies but the favorite one that I like most is
           playing football. When I have free time, I love to play football. I’m
           a big fan of football since my childhood. I have been very well in
-          this soccer game. backgroundColor : "black", 
+          this soccer game. backgroundColor : "black" 
         </Text>
       </View>
       <View style={styles.buttoncontainer}>

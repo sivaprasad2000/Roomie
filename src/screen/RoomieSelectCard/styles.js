@@ -11,7 +11,11 @@ const win = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    paddingBottom: 10,
+    borderWidth: 1,
+    margin: 10,
+    borderRadius: 10,
+    borderColor: '#5c5c5c',
   },
   pictureContainer: {
     margin: 20,
@@ -23,10 +27,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     borderWidth: 1,
+    resizeMode: 'cover',
     borderRadius: 10,
   },
   textContainer: {
-    alignItems: 'center',
+    alignItems: 'flex-start',
     width: '90%',
     height: 150,
     justifyContent: 'center',
@@ -34,7 +39,8 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   nameeeText: {
-    fontSize: 20,
+    marginLeft: 10,
+    fontSize: 25,
     fontWeight: 'bold',
   },
   descText: {
@@ -46,18 +52,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonXcontainer: {
-    backgroundColor: 'red',
-    width: 60,
+    backgroundColor: '#c91e12',
+    width: 90,
     height: 60,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
-    marginRight:60
+    marginRight: 60,
   },
   buttonOcontainer: {
-    marginLeft:60,
-    backgroundColor: 'blue',
-    width: 60,
+    marginLeft: 60,
+    backgroundColor: '#2eb519',
+    width: 90,
     height: 60,
     alignItems: 'center',
     justifyContent: 'center',
