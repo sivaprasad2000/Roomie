@@ -11,13 +11,12 @@ const win = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-
     padding: 10,
   },
   pictureContainer: {
     margin: 20,
     width: '90%',
-    height: '65%',
+    height: 400,
     alignSelf: 'center',
   },
   picture: {
@@ -28,38 +27,41 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     alignItems: 'center',
+    width: '90%',
+    height: 150,
     justifyContent: 'center',
-    backgroundColor: 'blue',
+    padding: 10,
+    margin: 10,
   },
   nameeeText: {
-    fontSize: 50,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   descText: {
-    fontSize: 20,
-  },
-  buttonXcontainer: {
-    backgroundColor: 'red',
-    width: '10%',
-    height: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 10,
-  },
-  buttonOcontainer: {
-    marginTop: 20,
-    backgroundColor: 'blue',
-    width: '10%',
-    height: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 10,
+    fontSize: 15,
   },
   buttoncontainer: {
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  buttonXcontainer: {
+    backgroundColor: 'red',
+    width: 60,
+    height: 60,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 10,
+    marginRight:60
+  },
+  buttonOcontainer: {
+    marginLeft:60,
+    backgroundColor: 'blue',
+    width: 60,
+    height: 60,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 10,
   },
 });
 
