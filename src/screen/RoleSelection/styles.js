@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Dimensions, Pressable, TouchableOpacity } from 
 
 const styles = StyleSheet.create({
     root: {
-        backgroundColor: '#011e26',
+        backgroundColor: '#1e2124',
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height,
     },
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     logo: {
         fontFamily: 'PrincessSofia-Regular',
         fontSize: 80,
-        color: '#fff'
+        color: '#7289da'
     },
     lower: {
         flex: 4,
@@ -23,31 +23,37 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonUpper: {
-        backgroundColor: '#fff',
+        backgroundColor: '#424549',
         width: '70%',
         height: 40,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
+        borderColor: '#9aff03',
+        borderWidth: 1,
     },
     buttonLower: {
         marginTop: 20,
         flexDirection: 'row',
-        backgroundColor: '#fff',
+        backgroundColor: '#424549',
         width: '70%',
         height: 40,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
+        borderColor: '#9aff03',
+        borderWidth: 1,
     },
     buttonTextNormal: {
         fontFamily: 'Righteous-Regular',
         fontSize: 16,
+        color: '#fff',
     },
     buttonTextCursive: {
         marginLeft: 10,
         fontFamily: 'PrincessSofia-Regular',
         fontSize: 18,
+        color: '#7289da',
     }
 })
 
