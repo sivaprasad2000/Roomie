@@ -4,10 +4,12 @@ import styles from './styles'
 
 const Matchuserlist = () => {
     return (
-        <View>
-            <Text style={styles.welcomeText}>Matched users list</Text>
+        <View style={styles.container}>
+            <View style={styles.headwrap}>
+                <Text style={styles.welcomeText}>Matched users list</Text>
+            </View>
         </View>
-    )
+    );
 }
 
 export default Matchuserlist
