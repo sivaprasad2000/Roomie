@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#fff',
         width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height,
+        height: '100%',
     },
     roomList: {
         backgroundColor: '#fff',

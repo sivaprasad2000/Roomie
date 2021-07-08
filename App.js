@@ -12,10 +12,7 @@ import RoomDetails from './src/screen/RoomDetails/roomDetails';
 const App = () => {
 
   return (
-    <SafeAreaView style={styles.mainView}>
-      <StatusBar /> 
-      <RoomDetails />
-    </SafeAreaView>
+      <RoomListScreen />
   );
 };
 
