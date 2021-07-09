@@ -8,13 +8,13 @@ import {
 
 import RoleSelectionScreen from './src/screen/RoleSelection/roleSelectionScreen';
 import RoomieSelectionScreen from './src/screen/RoomieSelectCard/RoomieSelectionScreen';
-
+import OwnerForm from './src/screen/OwnerForm/OwnerForm';
 const App = () => {
 
   return (
     <SafeAreaView style={styles.mainView}>
       <StatusBar /> 
-      <RoomieSelectionScreen />
+      <OwnerForm />
     </SafeAreaView>
   );
 };
